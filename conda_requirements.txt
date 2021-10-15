@@ -1,0 +1,7 @@
+numpy>=1.0
+scipy>=1.0
+matplotlib>=2.0
+h5py>=2.1
+tensorflow>=2.2
+tqdm>=4.0
+pytorch>=1.6.0
