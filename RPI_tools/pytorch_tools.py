@@ -69,7 +69,7 @@ def amplitude_mse(simulated, measured):
     return t.sum((t.sqrt(simulated+1e-8) - t.sqrt(measured))**2) / t.sum(measured)
 
 
-def reconstruct(pattern, probe, resolution, lr, iterations, loss_func=amplitude_mse, background=None, optimizer='Adam', GPU=False, schedule=True):
+def reconstruct(pattern, probe, resolution, lr, iterations, loss_func=amplitude_mse, background=None, optimizer='Adam', GPU=False, schedule=True, saturation=None):
     """Performs a full reconstruction
     
     because we use the probe here directly, without upsampling it, 
@@ -129,7 +129,9 @@ def reconstruct(pattern, probe, resolution, lr, iterations, loss_func=amplitude_
         simulated = measure(propagate(exit_wave), probe.shape)
         if background is not None:
             simulated = simulated + background
-        
+        # This allows accurate simulation of saturated datasets
+        if saturation is not None:
+            simulated = t.clamp(simulated, 1e-12, saturation)
         l = loss_func(simulated, pattern)
         l.backward()
         return l
