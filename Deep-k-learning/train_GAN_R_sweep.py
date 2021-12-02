@@ -180,7 +180,7 @@ if __name__ == "__main__":
             data_input = np.concatenate((data_input, data_input, data_input), axis=-1)
 
             # load the training ground truth data
-            data_output = np.load(prefix + 'tr_images-R-%0.2f.npy' % R)
+            data_output = np.load(prefix + 'tr_images.npy')
             data_output = np.angle(data_output)
             data_output = np.expand_dims(data_output, axis=-1)
 
