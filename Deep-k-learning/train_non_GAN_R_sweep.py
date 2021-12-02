@@ -144,7 +144,7 @@ if __name__ == "__main__":
             #save model
             model.save(prefix + 'pretrained-R-' + str(R) + '-peak-' + str(photon_level) + '.h5')
 
-            io.savemat(date_string + + 'pretrained-R-' + str(R) + '-peak-' + str(photon_level) + '.mat',{'train_loss1':np.array(train_loss1),
+            io.savemat(date_string + 'pretrained-R-' + str(R) + '-peak-' + str(photon_level) + '.mat',{'train_loss1':np.array(train_loss1),
                                                 'validation_loss1':np.array(validation_loss1),
                                                 'train_loss2':np.array(train_loss2),
                                                 'validation_loss2':np.array(validation_loss2),
