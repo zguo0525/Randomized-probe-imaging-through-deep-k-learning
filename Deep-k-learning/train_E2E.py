@@ -16,7 +16,7 @@ if __name__ == "__main__":
     
     from tqdm import tqdm
     
-    # loop through peaks
+    # loop through photon_level
     photon_levels = [1, 10, 100, 1e3]
     R = 0.5
 
