@@ -1,7 +1,7 @@
 # tensorflow script used in "Randomized probe imaging through deep k-learning"
 # written and maintained by Abe Levitan and Zhen Guo
 # =============================================================================
-"""Contains script to train deep k-learning architecture."""
+"""Contains script to train deep k-learning architecture for simulation data."""
 
 import tensorflow as tf
 from networks import *
