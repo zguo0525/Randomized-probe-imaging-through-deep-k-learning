@@ -13,6 +13,7 @@ import time
 pretrain = True
 prefix = '../data/' + 'Simulated/Fixed_R_Noise_Sweep/'
 photon_levels = [1, 10, 100, 1e3]
+R = 0.5
 
 if __name__ == "__main__":
 
