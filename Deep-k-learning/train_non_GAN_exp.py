@@ -11,7 +11,7 @@ import numpy as np
 import time
 
 pretrain = True
-prefix = '../data/' + 'Simulated/R_Sweep/'
+prefix = '../data/' + 'Simulated/Fixed_R_Noise_Sweep/'
 photon_levels = [1, 10, 100, 1000]
 
 if __name__ == "__main__":
