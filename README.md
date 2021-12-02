@@ -11,7 +11,7 @@ Organization
 - The RPI_tools folder contains all the important functions to generative simulation data.
     - pytorch_tools contains the code used for iterative reconstructions
     - tf_tools contains code used for simulating RPI experiments in tensorflow
-- The Deep-k-learning folder contains the designs for the non generative and generative deep k-learning architecutre, as well as scripts to use them.
+- The Deep-k-learning folder contains the designs for the non generative and generative deep k-learning architecutre, as well as scripts to use them using simulation and experimental data.
 - Generating-Simulation-Data.ipynb is used to generate simulated data and approximants for the paper's simulation section.
 - Generating-E2E-Simulation-Data.ipynb is used to generate simulated training data for End-to-End training.
 - Process-Simulation-Data.ipynb is used to perform analysis and generate figures for the simulation section of the paper.
