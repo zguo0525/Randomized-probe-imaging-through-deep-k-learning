@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
         chn2 = data_input.shape[-1]
 
-        data_output = np.load(prefix + 'tr_images-R-%0.2f.npy' % R)
+        data_output = np.load(prefix + 'tr_images.npy')
         data_output = np.angle(data_output)
         data_output = tf.expand_dims(data_output, axis=-1)
 
