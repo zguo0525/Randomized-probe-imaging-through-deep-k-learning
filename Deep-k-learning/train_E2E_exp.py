@@ -40,7 +40,7 @@ if __name__ == "__main__":
         Rs = np.sqrt(Xs**2 + Ys**2)
 
         # load the training ground truth data
-        data_output = np.load(prefix + 'tr_images-R-%0.2f.npy' % R)
+        data_output = np.load(prefix + 'tr_images.npy')
         data_output = np.angle(data_output)
         data_output[:, Rs>128] = 0
         data_output = np.expand_dims(data_output, axis=-1)
