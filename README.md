@@ -1,7 +1,7 @@
 # Randomized-probe-imaging-through-deep-k-learning
 ====================
 
-This repository contains the jupyter notebooks, python libraries, and information needed to reproduce the results and figures in the paper "Randomized probe imaging through deep k-learning".
+This repository contains the jupyter notebooks, python libraries, and information needed to reproduce the results and figures in the paper "Randomized probe imaging through deep k-learning" (https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-2-2247&id=467928).
 
 The git repository contains all the code needed, however there is also a substantial amount of data associated with this work which cannot be distributed via a git repository. The data can be found by request to the author. The code in this repository assumes that the data has been downloaded and located in a folder "data/" placed in the top-level directory within the repository. If the data is located elsewhere on your system, you can edit the data folder prefix at the top of each jupyter notebook.
 
